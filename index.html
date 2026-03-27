@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prasanna Balaji Sakthidasan — Manufacturing Project Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'IBM Plex Sans',sans-serif;background:#f5f3ef;color:#1c1c1c;overflow-x:hidden;}
+.site-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;background:#0d1f3c;display:flex;align-items:center;justify-content:space-between;padding:0 48px;border-bottom:1px solid rgba(255,255,255,0.07);}
+.nav-brand{font-family:'Playfair Display',serif;font-size:17px;color:#fff;text-decoration:none;}
+.nav-brand em{color:#d4733a;font-style:italic;}
+.nav-menu{display:flex;gap:28px;list-style:none;}
+.nav-menu a{font-size:11px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s;}
+.nav-menu a:hover{color:#d4733a;}
+.hero{min-height:100vh;background-color:#0d1f3c;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,0.022) 0px,rgba(255,255,255,0.022) 1px,transparent 1px,transparent 72px),repeating-linear-gradient(90deg,rgba(255,255,255,0.022) 0px,rgba(255,255,255,0.022) 1px,transparent 1px,transparent 72px);display:flex;align-items:center;padding:100px 64px 80px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;background:#d4733a;}
+.hero::after{content:'';position:absolute;right:-180px;top:50%;transform:translateY(-50%);width:580px;height:580px;border-radius:50%;border:1px solid rgba(212,115,58,0.1);pointer-events:none;}
+.hero-inner{max-width:1160px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.25fr 0.75fr;gap:80px;align-items:center;}
+.hero-eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:26px;font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#d4733a;}
+.hero-eyebrow::before{content:'';display:inline-block;width:36px;height:1px;background:#d4733a;}
+.hero-name{font-family:'Playfair Display',serif;font-size:clamp(50px,5.8vw,82px);font-weight:900;line-height:0.95;color:#fff;letter-spacing:-0.02em;margin-bottom:26px;}
+.hero-name .l2{color:#d4733a;font-style:italic;display:block;}
+.hero-name .l3{display:block;font-size:clamp(28px,3vw,46px);color:rgba(255,255,255,0.38);font-weight:700;}
+.hero-pitch{font-size:15.5px;color:rgba(255,255,255,0.52);line-height:1.85;max-width:500px;margin-bottom:16px;border-left:2px solid rgba(212,115,58,0.4);padding-left:18px;}
+.hero-tagline{font-size:13px;color:rgba(255,255,255,0.32);margin-bottom:44px;font-style:italic;padding-left:20px;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-solid{display:inline-flex;align-items:center;gap:8px;background:#d4733a;color:#fff;padding:13px 28px;border-radius:3px;text-decoration:none;font-size:12px;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;transition:background 0.2s,transform 0.15s;}
+.btn-solid:hover{background:#e88a50;transform:translateY(-1px);}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.6);padding:13px 28px;border-radius:3px;border:1px solid rgba(255,255,255,0.17);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;transition:border-color 0.2s,color 0.2s;}
+.btn-ghost:hover{border-color:#d4733a;color:#d4733a;}
+.stats-panel{display:grid;grid-template-columns:1fr 1fr;gap:3px;position:relative;z-index:1;}
+.sbox{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);padding:30px 22px;transition:background 0.25s;}
+.sbox:hover{background:rgba(212,115,58,0.1);}
+.snum{font-family:'Playfair Display',serif;font-size:50px;font-weight:900;color:#d4733a;line-height:1;margin-bottom:10px;}
+.snum small{font-size:24px;opacity:0.5;}
+.sdesc{font-size:10.5px;color:rgba(255,255,255,0.36);line-height:1.5;text-transform:uppercase;letter-spacing:0.06em;}
+.sw{padding:96px 64px;background:#f5f3ef;}
+.sw.alt{background:#ffffff;}
+.sw.dk{background:#0d1f3c;}
+.inner{max-width:1160px;margin:0 auto;}
+.s-lbl{display:flex;align-items:center;gap:12px;font-size:10.5px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#d4733a;margin-bottom:10px;}
+.s-lbl::before{content:'';display:inline-block;width:26px;height:1px;background:#d4733a;}
+h2.sh{font-family:'Playfair Display',serif;font-size:clamp(30px,3.5vw,48px);font-weight:700;color:#0d1f3c;line-height:1.1;margin-bottom:52px;letter-spacing:-0.015em;}
+h2.sh.lt{color:#ffffff;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;}
+.ap{font-size:16px;color:#444;line-height:1.9;margin-bottom:20px;}
+.ap:last-child{margin-bottom:0;}
+.ap strong{color:#0d1f3c;}
+.usp-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
+.usp-item{display:flex;align-items:flex-start;gap:14px;padding:14px 18px;background:#fff;border:1px solid #e5e2dd;border-left:3px solid #d4733a;border-radius:4px;font-size:13.5px;color:#444;line-height:1.6;}
+.usp-item span{font-size:17px;flex-shrink:0;margin-top:1px;}
+.ilist{list-style:none;}
+.iitem{display:flex;align-items:flex-start;gap:14px;padding:15px 0;border-bottom:1px solid #eae7e2;}
+.iitem:first-child{border-top:1px solid #eae7e2;}
+.iico{width:36px;height:36px;background:#fef0e6;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;}
+.ikey{font-size:9.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#bbb;margin-bottom:3px;}
+.ival{font-size:13.5px;color:#222;font-weight:500;line-height:1.45;}
+.ival a{color:#d4733a;text-decoration:none;}
+.fit-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px;}
+.fit-card{flex:1;min-width:160px;background:#0d1f3c;border-radius:6px;padding:16px 16px;display:flex;align-items:center;gap:12px;border:1px solid rgba(255,255,255,0.08);transition:background 0.2s;}
+.fit-card:hover{background:#1a3562;}
+.fit-ico{font-size:18px;flex-shrink:0;}
+.fit-lbl{font-size:12.5px;font-weight:600;color:#fff;line-height:1.3;}
+.pitch-banner{background:#172d52;border-radius:8px;padding:40px 48px;display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:start;border-left:5px solid #d4733a;}
+.pitch-qm{font-family:'Playfair Display',serif;font-size:80px;color:#d4733a;line-height:0.7;opacity:0.6;flex-shrink:0;}
+.pitch-text{font-size:15.5px;color:rgba(255,255,255,0.7);line-height:1.9;}
+.pitch-text p{margin-bottom:14px;}
+.pitch-text p:last-child{margin-bottom:0;}
+.pitch-text strong{color:#d4733a;}
+.timeline{position:relative;padding-left:32px;}
+.timeline::before{content:'';position:absolute;left:0;top:12px;bottom:0;width:1px;background:#ddd;}
+.ti{position:relative;margin-bottom:60px;}
+.ti:last-child{margin-bottom:0;}
+.tdot{position:absolute;left:-37px;top:10px;width:9px;height:9px;border-radius:50%;background:#d4733a;box-shadow:0 0 0 3px #ffffff,0 0 0 5px rgba(212,115,58,0.3);}
+.ti.now .tdot{animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 3px #fff,0 0 0 5px rgba(212,115,58,0.3);}50%{box-shadow:0 0 0 3px #fff,0 0 0 10px rgba(212,115,58,0);}}
+.thead{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:4px;}
+.trole{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#0d1f3c;}
+.tperiod{font-size:11px;font-weight:700;letter-spacing:0.06em;color:#d4733a;background:#fef0e6;padding:4px 12px;border-radius:2px;white-space:nowrap;}
+.tco{font-size:13px;color:#999;font-weight:500;margin-bottom:8px;}
+.tctx{font-size:13px;color:#888;font-style:italic;margin-bottom:16px;line-height:1.6;padding:10px 14px;background:#f8f6f3;border-left:2px solid #e0d5c8;border-radius:3px;}
+.tsec{font-size:10.5px;font-weight:700;letter-spacing:0.13em;text-transform:uppercase;color:#0d1f3c;margin:16px 0 8px;}
+.tbullets{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.tbullets li{font-size:14px;color:#555;padding-left:16px;position:relative;line-height:1.65;}
+.tbullets li::before{content:'';position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:#d4733a;opacity:0.6;}
+.tskills{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;}
+.tsk{font-size:11px;color:#d4733a;background:#fef0e6;border:1px solid rgba(212,115,58,0.25);padding:3px 10px;border-radius:2px;font-weight:600;}
+.proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.proj-card{background:#fff;border:1px solid #e5e2dd;border-radius:6px;padding:26px 24px;border-top:3px solid #d4733a;transition:transform 0.15s,box-shadow 0.15s;}
+.proj-card:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,0.08);}
+.proj-name{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:#0d1f3c;margin-bottom:8px;line-height:1.3;}
+.proj-client{font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#d4733a;margin-bottom:10px;}
+.proj-desc{font-size:13.5px;color:#666;line-height:1.7;}
+.scols{display:grid;grid-template-columns:1fr 1fr;gap:56px;}
+.sgrp{margin-bottom:34px;}
+.sgt{font-size:10.5px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#0d1f3c;border-left:3px solid #d4733a;padding-left:10px;margin-bottom:14px;}
+.tags{display:flex;flex-wrap:wrap;gap:7px;}
+.tag{font-size:12.5px;color:#555;background:#fff;border:1px solid #ddd;padding:5px 13px;border-radius:2px;font-weight:500;transition:border-color 0.2s,color 0.2s;}
+.tag:hover{border-color:#d4733a;color:#d4733a;}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;}
+.tool{background:#0d1f3c;color:rgba(255,255,255,0.72);font-size:12px;font-weight:500;padding:10px 12px;border-radius:3px;text-align:center;transition:background 0.2s;}
+.tool:hover{background:#1a3562;}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:14px;}
+.cert{background:#fff;border:1px solid #e5e2dd;border-radius:6px;padding:20px 18px;display:flex;align-items:flex-start;gap:14px;transition:border-color 0.2s,transform 0.15s;}
+.cert:hover{border-color:#d4733a;transform:translateY(-2px);}
+.cico{width:38px;height:38px;background:#fef0e6;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;}
+.cname{font-size:13.5px;font-weight:600;color:#0d1f3c;line-height:1.3;}
+.csub{font-size:11.5px;color:#aaa;margin-top:3px;}
+.egrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.ecard{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);border-left:4px solid #d4733a;border-radius:4px;padding:26px 22px;transition:background 0.2s;}
+.ecard:hover{background:rgba(255,255,255,0.1);}
+.edeg{font-size:14.5px;font-weight:600;color:#ffffff;line-height:1.35;margin-bottom:7px;}
+.einst{font-size:12.5px;color:rgba(255,255,255,0.38);margin-bottom:12px;}
+.eyr{font-size:11px;font-weight:700;letter-spacing:0.06em;color:#d4733a;}
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.clinks{list-style:none;background:#0d1f3c;border-radius:8px;padding:8px 24px;}
+.clink{display:flex;align-items:center;gap:16px;text-decoration:none;color:rgba(255,255,255,0.65);font-size:14px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.07);transition:color 0.2s;}
+.clinks li:last-child .clink{border-bottom:none;}
+.clink:hover{color:#d4733a;}
+.ckico{width:40px;height:40px;background:rgba(255,255,255,0.06);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;transition:background 0.2s;}
+.clink:hover .ckico{background:rgba(212,115,58,0.2);}
+.cklbl{font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.28);margin-bottom:3px;}
+.footer{background:#060f20;color:rgba(255,255,255,0.22);text-align:center;padding:24px;font-size:12px;letter-spacing:0.05em;}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity 0.7s ease,transform 0.7s ease;}
+.reveal.in{opacity:1;transform:none;}
+@media(max-width:900px){
+  .site-nav{padding:0 24px;}
+  .nav-menu{display:none;}
+  .hero{padding:100px 28px 72px;}
+  .hero-inner,.about-grid,.scols,.contact-wrap,.egrid,.proj-grid{grid-template-columns:1fr;gap:40px;}
+  .sw{padding:72px 28px;}
+  .pitch-banner{grid-template-columns:1fr;gap:16px;padding:28px 24px;}
+  .pitch-qm{font-size:48px;}
+}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="#hero" class="nav-brand"><em>Prasanna</em>Sakthidasan</a>
+  <ul class="nav-menu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#pitch">Pitch</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Manufacturing Project Engineer</div>
+      <h1 class="hero-name">
+        Prasanna
+        <span class="l2">Balaji</span>
+        <span class="l3">Sakthidasan</span>
+      </h1>
+      <p class="hero-pitch">Results-driven project professional with 6+ years of experience executing complex projects across heavy fabrication, industrial automation, and EV programs. My strength is not theory — it's <strong style="color:rgba(255,255,255,0.8)">execution under constraints.</strong></p>
+      <p class="hero-tagline">"I don't just track tasks. I close them."</p>
+      <div class="hero-actions">
+        <a href="#pitch" class="btn-solid">My Pitch &rarr;</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="stats-panel">
+      <div class="sbox"><div class="snum">6<small>+</small></div><div class="sdesc">Years of engineering experience</div></div>
+      <div class="sbox"><div class="snum">1100<small>+</small></div><div class="sdesc">Metric tons delivered</div></div>
+      <div class="sbox"><div class="snum">30<small>+</small></div><div class="sdesc">Engineering change initiatives</div></div>
+      <div class="sbox"><div class="snum">17</div><div class="sdesc">Production teams coordinated</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sw" id="about">
+  <div class="inner reveal">
+    <div class="s-lbl">About Me</div>
+    <h2 class="sh">Making complex projects<br>actually run on time</h2>
+    <div class="about-grid">
+      <div>
+        <p class="ap">I specialize in bringing structure to chaotic environments &mdash; aligning people, materials, timelines, and budgets to deliver projects on time, within cost, and to quality standards.</p>
+        <p class="ap">My experience spans <strong>EV product development</strong> at Greaves Electric Mobility, <strong>custom industrial automation</strong> at Mind View Engineering, and <strong>large-scale heavy fabrication</strong> for global OEMs at Diamond Engineering &mdash; delivering equipment for clients including FLSmidth, Loesche, Metso, Sandvik, BPCL, and Daimler India.</p>
+        <p class="ap">Recently relocated to Toronto with a Graduate Certificate in Project Management (Honours) from Humber College and a Lean Six Sigma Black Belt. I bring a <strong>manufacturing-first mindset</strong> &mdash; I understand what actually works on the shop floor and at customer sites.</p>
+        <div style="margin-top:32px;">
+          <div class="sgt" style="margin-bottom:14px;">Best fit for</div>
+          <div class="fit-row">
+            <div class="fit-card"><div class="fit-ico">&#128193;</div><div class="fit-lbl">Project Coordinator</div></div>
+            <div class="fit-card"><div class="fit-ico">&#128203;</div><div class="fit-lbl">Assistant Project Manager</div></div>
+            <div class="fit-card"><div class="fit-ico">&#127981;</div><div class="fit-lbl">Manufacturing &amp; Operations</div></div>
+            <div class="fit-card"><div class="fit-ico">&#9889;</div><div class="fit-lbl">EV / Automotive Programs</div></div>
+            <div class="fit-card"><div class="fit-ico">&#9881;</div><div class="fit-lbl">Heavy Engineering Execution</div></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <ul class="ilist" style="margin-bottom:32px;">
+          <li class="iitem"><div class="iico">&#128205;</div><div><div class="ikey">Location</div><div class="ival">Toronto, Ontario, Canada</div></div></li>
+          <li class="iitem"><div class="iico">&#128222;</div><div><div class="ikey">Phone</div><div class="ival">705-297-6376</div></div></li>
+          <li class="iitem"><div class="iico">&#128231;</div><div><div class="ikey">Email</div><div class="ival"><a href="mailto:prasannabalaji1997@gmail.com">prasannabalaji1997@gmail.com</a></div></div></li>
+          <li class="iitem"><div class="iico">&#128279;</div><div><div class="ikey">LinkedIn</div><div class="ival"><a href="https://linkedin.com/in/prasannasakthi" target="_blank">linkedin.com/in/prasannasakthi</a></div></div></li>
+          <li class="iitem"><div class="iico">&#9989;</div><div><div class="ikey">Work Authorization</div><div class="ival">Eligible to work in Canada &middot; Valid Ontario Driver&rsquo;s License</div></div></li>
+        </ul>
+        <div class="sgt" style="margin-bottom:14px;">What sets me apart</div>
+        <ul class="usp-list">
+          <li class="usp-item"><span>&#128279;</span>Proven coordination of multi-disciplinary teams across engineering, procurement, vendors, QA/QC, and site operations</li>
+          <li class="usp-item"><span>&#128200;</span>Strong control over cost tracking, scheduling, documentation, and change management in compliance-driven environments</li>
+          <li class="usp-item"><span>&#127959;</span>Manufacturing-first mindset &mdash; understands what actually works on the shop floor and at customer sites</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sw dk" id="pitch">
+  <div class="inner reveal">
+    <div class="s-lbl">Elevator Pitch</div>
+    <h2 class="sh lt">In my own words</h2>
+    <div class="pitch-banner">
+      <div class="pitch-qm">&ldquo;</div>
+      <div class="pitch-text">
+        <p>Imagine if every project ran smoothly, sticking to both budget and schedule &mdash; that&rsquo;s what I bring to the table.</p>
+        <p>I specialize in making complex projects actually run on time. I&rsquo;ve coordinated EV programs at Greaves Electric Mobility, where I <strong>reduced prototype delays by 15%</strong> through tighter BOM and supplier control. I&rsquo;ve delivered custom machines from design to commissioning at Mind View Engineering, and I&rsquo;ve executed large-scale heavy fabrication projects for <strong>global OEMs</strong> at Diamond Engineering.</p>
+        <p>What sets me apart is <strong>execution under pressure</strong> &mdash; aligning people, materials, quality, and timelines in environments where mistakes cost money and reputation. I don&rsquo;t just track tasks; I close them.</p>
+        <p>If you need someone who can coordinate stakeholders, manage risk, and deliver under fixed deadlines and budgets &mdash; that&rsquo;s exactly what I do.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sw" id="experience">
+  <div class="inner reveal">
+    <div class="s-lbl">Experience</div>
+    <h2 class="sh">Professional journey</h2>
+    <div class="timeline">
+
+      <div class="ti now">
+        <div class="tdot"></div>
+        <div class="thead"><div class="trole">Project Support Analyst</div><div class="tperiod">Jan 2026 &ndash; Present</div></div>
+        <div class="tco">Giroday &amp; Warren CPA LLP &middot; Etobicoke, ON (Part Time)</div>
+        <ul class="tbullets">
+          <li>Managing client intake and job assignment workflow, distributing work to accounting staff and tracking task progress.</li>
+          <li>Processing invoicing, payroll support, and financial record updates using QuickBooks.</li>
+          <li>Troubleshooting technical issues within accounting software systems to ensure operational continuity.</li>
+        </ul>
+      </div>
+
+      <div class="ti">
+        <div class="tdot"></div>
+        <div class="thead"><div class="trole">Program Engineer</div><div class="tperiod">Mar 2023 &ndash; Dec 2023</div></div>
+        <div class="tco">Greaves Electric Mobility &middot; India</div>
+        <div class="tctx">Leading EV manufacturer operating under strict homologation timelines, regulatory requirements, and aggressive launch schedules &mdash; with programs running in parallel with ongoing field-issue resolution.</div>
+        <div class="tsec">Key Responsibilities</div>
+        <ul class="tbullets">
+          <li>Coordinated cross-functional stakeholders across Design, R&amp;D, SCM, Vendors, QA, Assembly, Dealers, and Customer Quality.</li>
+          <li>Planned and tracked program timelines aligned with homologation and management milestones.</li>
+          <li>Supported cost tracking, feasibility studies, and change management activities.</li>
+          <li>Acted as single point of coordination for issue resolution and program execution.</li>
+        </ul>
+        <div class="tsec">Key Contributions</div>
+        <ul class="tbullets">
+          <li>Reduced prototype build delays by 15% through improved BOM control, tooling readiness, and supplier coordination.</li>
+          <li>Managed 30+ engineering and process change activities for the AMPERE PRIMUS EV program.</li>
+          <li>Supported trial builds, validation runs, and launch readiness activities.</li>
+          <li>Ensured compliance with homologation standards and internal governance processes.</li>
+        </ul>
+        <div class="tskills"><span class="tsk">Stakeholder Coordination</span><span class="tsk">Process Optimization</span><span class="tsk">Change Management</span><span class="tsk">Cross-functional Collaboration</span></div>
+      </div>
+
+      <div class="ti">
+        <div class="tdot"></div>
+        <div class="thead"><div class="trole">Project Engineer</div><div class="tperiod">Aug 2022 &ndash; Feb 2023</div></div>
+        <div class="tco">Mind View Engineering Services &middot; India</div>
+        <div class="tctx">Lean engineering firm delivering custom machines, jigs, fixtures, and automation solutions &mdash; projects spanning design &rarr; fabrication &rarr; site installation &rarr; commissioning inside live production plants.</div>
+        <div class="tsec">Key Responsibilities</div>
+        <ul class="tbullets">
+          <li>Interfaced directly with customers to convert operational problems into engineered solutions.</li>
+          <li>Designed machines, jigs, and fixtures using Autodesk Inventor &amp; AutoCAD.</li>
+          <li>Managed outsourced fabrication and conducted quality checks.</li>
+          <li>Led site installation, permits, trial runs, commissioning, and billing closure.</li>
+        </ul>
+        <div class="tsec">Key Contributions</div>
+        <ul class="tbullets">
+          <li>Delivered custom equipment for manufacturing clients including Daimler India (BharatBenz).</li>
+          <li>Improved equipment performance and reduced cycle time through design optimization.</li>
+          <li>Executed installations inside active plants without safety incidents.</li>
+          <li>Owned complete project lifecycle with minimal supervision.</li>
+        </ul>
+        <div class="tskills"><span class="tsk">Mechanical Design</span><span class="tsk">Project Ownership</span><span class="tsk">Vendor Management</span><span class="tsk">Site Execution</span><span class="tsk">Commissioning</span></div>
+      </div>
+
+      <div class="ti">
+        <div class="tdot"></div>
+        <div class="thead"><div class="trole">Project Engineer</div><div class="tperiod">Jun 2017 &ndash; Jul 2022</div></div>
+        <div class="tco">Diamond Engineering Service Pvt. Ltd. &middot; India</div>
+        <div class="tctx">Heavy fabrication company executing projects for global OEMs such as FLSmidth, AUMUND, Loesche, Metso, and Sandvik across cement, mining, oil &amp; gas, and power sectors.</div>
+        <div class="tsec">Key Responsibilities</div>
+        <ul class="tbullets">
+          <li>Executed heavy fabrication projects from order receipt to dispatch and billing.</li>
+          <li>Created material forecasts and coordinated procurement timing.</li>
+          <li>Planned workflows across 17 specialized fabrication groups.</li>
+          <li>Coordinated QA/QC inspections per customer QAP (internal &amp; external).</li>
+        </ul>
+        <div class="tsec">Key Contributions</div>
+        <ul class="tbullets">
+          <li>Delivered 1,100+ metric tons of heavy equipment &mdash; stacker reclaimers, ship loaders, conveyors, crushers, and wagon tipplers.</li>
+          <li>Improved workflow efficiency by ~12% through better sequencing and vendor coordination.</li>
+          <li>Managed 8&ndash;12 vendors per project with tight delivery timelines.</li>
+          <li>Maintained budget control, inspection compliance, and on-time delivery.</li>
+        </ul>
+        <div class="tskills"><span class="tsk">Project Coordination</span><span class="tsk">Vendor Management</span><span class="tsk">Schedule Management</span><span class="tsk">Financial Oversight</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="sw alt" id="projects">
+  <div class="inner reveal">
+    <div class="s-lbl">Projects</div>
+    <h2 class="sh">Featured work</h2>
+    <div class="proj-grid">
+      <div class="proj-card">
+        <div class="proj-client">FLSmidth / Loesche</div>
+        <div class="proj-name">Stacker Reclaimers &amp; Ship Loaders</div>
+        <div class="proj-desc">5 machines, 1,100 MT of fabricated structures delivered on time for global OEM clients in cement and mining sectors.</div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-client">BPCL &amp; HPCL</div>
+        <div class="proj-name">Bulk Handling Systems</div>
+        <div class="proj-desc">1,500&ndash;2,500 MT conveyors, crushers, and elevators &mdash; zero schedule slippage across multiple concurrent projects.</div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-client">Metso &amp; Sandvik</div>
+        <div class="proj-name">Industrial Conveyor Systems</div>
+        <div class="proj-desc">Complex multi-vendor workflow optimization managing 8&ndash;12 suppliers per project for precision fabrication and on-time delivery.</div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-client">Mind View / Daimler India (BharatBenz)</div>
+        <div class="proj-name">Custom Industrial Automation</div>
+        <div class="proj-desc">Design, fabrication, and commissioning of custom machines, jigs, and fixtures for automotive plant clients &mdash; zero safety incidents on active plant sites.</div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-client">Greaves Electric Mobility</div>
+        <div class="proj-name">AMPERE PRIMUS EV Launch</div>
+        <div class="proj-desc">Reduced prototype build delays by 15%. Managed 30+ engineering change initiatives across design, manufacturing, quality, and suppliers through homologation.</div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-client">Greaves Electric Mobility</div>
+        <div class="proj-name">Ampere Rio EV Launch</div>
+        <div class="proj-desc">Coordinated cross-functional delivery, homologation compliance, and safety validation across a compressed product launch timeline.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sw" id="skills">
+  <div class="inner reveal">
+    <div class="s-lbl">Skills &amp; Tools</div>
+    <h2 class="sh">Expertise &amp; capabilities</h2>
+    <div class="scols">
+      <div>
+        <div class="sgrp">
+          <div class="sgt">Project Management</div>
+          <div class="tags">
+            <span class="tag">Project Planning &amp; Execution</span><span class="tag">Cross-Functional Leadership</span><span class="tag">Manufacturing Program Delivery</span><span class="tag">Design-to-Production Lifecycle</span><span class="tag">Schedule Development</span><span class="tag">Risk Identification &amp; Mitigation</span><span class="tag">Engineering Change Management</span>
+          </div>
+        </div>
+        <div class="sgrp">
+          <div class="sgt">Operations &amp; Quality</div>
+          <div class="tags">
+            <span class="tag">Supplier &amp; Vendor Coordination</span><span class="tag">Procurement Tracking</span><span class="tag">Technical Documentation</span><span class="tag">Lean Process Improvement</span><span class="tag">DFMEA / PPAP</span><span class="tag">QA/QC Compliance</span><span class="tag">Cost Tracking &amp; Budget Control</span><span class="tag">Performance Metrics &amp; Reporting</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="sgt" style="margin-bottom:14px;">Technical Tools</div>
+        <div class="tgrid">
+          <div class="tool">MS Project</div><div class="tool">Primavera P6</div><div class="tool">Advanced Excel</div><div class="tool">Power BI</div><div class="tool">AutoCAD</div><div class="tool">Autodesk Inventor</div><div class="tool">BOM &amp; MRP</div><div class="tool">Eng. Change Logs</div><div class="tool">RFIs / RFQs</div><div class="tool">QA Documentation</div><div class="tool">QuickBooks</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sw alt">
+  <div class="inner reveal">
+    <div class="s-lbl">Certifications</div>
+    <h2 class="sh">Professional credentials</h2>
+    <div class="cgrid">
+      <div class="cert"><div class="cico">&#11035;</div><div><div class="cname">Lean Six Sigma Black Belt</div><div class="csub">Process improvement &amp; quality management</div></div></div>
+      <div class="cert"><div class="cico">&#128300;</div><div><div class="cname">ASME Level 2</div><div class="csub">UT, RT, PT &amp; MT non-destructive testing</div></div></div>
+      <div class="cert"><div class="cico">&#128260;</div><div><div class="cname">Scrum Fundamentals Certified (SFC&#8482;)</div><div class="csub">Agile project delivery</div></div></div>
+      <div class="cert"><div class="cico">&#128737;</div><div><div class="cname">WHMIS Certification</div><div class="csub">Workplace hazardous materials information</div></div></div>
+      <div class="cert"><div class="cico">&#10084;</div><div><div class="cname">First Aid &amp; CPR</div><div class="csub">Emergency response certified</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sw dk" id="education">
+  <div class="inner reveal">
+    <div class="s-lbl">Education</div>
+    <h2 class="sh lt">Academic background</h2>
+    <div class="egrid">
+      <div class="ecard"><div class="edeg">Ontario Graduate Certificate &mdash; Project Management (Honours)</div><div class="einst">Humber College &middot; Toronto, ON</div><div class="eyr">2025</div></div>
+      <div class="ecard"><div class="edeg">Postgraduate Certificate &mdash; Business Administration</div><div class="einst">Algoma University &middot; Ontario</div><div class="eyr">2024</div></div>
+      <div class="ecard"><div class="edeg">Bachelor of Technology &mdash; Mechanical Engineering</div><div class="einst">Bharath Institute of Research and Technology &middot; India</div><div class="eyr">2020</div></div>
+      <div class="ecard"><div class="edeg">Diploma &mdash; Mechanical Engineering (Honours)</div><div class="einst">A.V.C Polytechnic College &middot; India</div><div class="eyr">2016</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sw" id="contact">
+  <div class="inner reveal">
+    <div class="contact-wrap">
+      <div>
+        <div class="s-lbl">Contact</div>
+        <h2 class="sh">Let&rsquo;s work<br>together</h2>
+        <p style="font-size:15.5px;color:#666;line-height:1.85;margin-bottom:36px;">Open to new opportunities in manufacturing project management and program engineering across the Greater Toronto Area and beyond.</p>
+        <a href="mailto:prasannabalaji1997@gmail.com" class="btn-solid">Send an Email &rarr;</a>
+      </div>
+      <ul class="clinks">
+        <li><a href="mailto:prasannabalaji1997@gmail.com" class="clink"><div class="ckico">&#128231;</div><div><div class="cklbl">Email</div>prasannabalaji1997@gmail.com</div></a></li>
+        <li><a href="tel:7052976376" class="clink"><div class="ckico">&#128222;</div><div><div class="cklbl">Phone</div>705-297-6376</div></a></li>
+        <li><a href="https://linkedin.com/in/prasannasakthi" target="_blank" class="clink"><div class="ckico">&#128279;</div><div><div class="cklbl">LinkedIn</div>linkedin.com/in/prasannasakthi</div></a></li>
+        <li><div class="clink" style="cursor:default"><div class="ckico">&#128205;</div><div><div class="cklbl">Location</div>Toronto, Ontario, Canada</div></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">&copy; 2026 Prasanna Balaji Sakthidasan &nbsp;&middot;&nbsp; Manufacturing Project Engineer &nbsp;&middot;&nbsp; Toronto, ON</footer>
+
+<script>
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
